@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&display=swap');
+
+body{
+font-family: 'Lato', sans-serif;
+}
+
+.dot{
+    width: 10px; 
+    height: 10px;
+}
+
+.player p:first-child{
+    display: inline;
+}
+
+
+.player .dot{
+   /* display: none;*/
+}
+
+.gscore{
+    font-size: 10vh;
+}
+
+#rscore1, #rscore2{
+    font-size: 7vh;
+    color: white;
+}
+
+.rscore{
+    background-color: red;
+    width: 10vw;
+    margin: auto;
+}

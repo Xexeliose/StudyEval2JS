@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <!-- Bootsrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- My CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="text-center">
+        <p>+ NEW GAME</p>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col player player1">
+                <div>
+                    <p class="">PLAYER 1</p>
+                    <img src="images/PlayingDot.png" alt="" class="dot player1-dot">
+                </div>
+                <p id="gscore1" class="gscore">0</p>
+            </div>
+
+            <div class="col">
+                <img src="images/Dice6.png" alt="Dice">
+            </div>
+
+            <div class="col player player2">
+                <div>
+                    <p class="">PLAYER 2</p>
+                    <img src="images/PlayingDot.png" alt="Dot" class="dot player2-dot">
+                </div>
+                <p id="gscore2" class="gscore">0</p>
+            </div>
+        </div>
+
+        <div class="row d-flex align-items-center ">
+            <div class="col">
+                <div class="rscore">
+                    <p>CURRENT</p>
+                    <p id="rscore1" >0</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <p>ROLL DICE</p>
+                <p>HOLD</p>
+            </div>
+
+            <div class="col ">
+                <div class="rscore">
+                    <p>CURRENT</p>
+                    <p id="rscore2" >0</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootsrap JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
