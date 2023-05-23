@@ -14,7 +14,7 @@
 
 <body>
     <div class="text-center">
-        <p>+ NEW GAME</p>
+        <p id="newgame">+ NEW GAME</p>
     </div>
 
     <div class="container text-center">
@@ -22,19 +22,18 @@
             <div class="col player player1">
                 <div>
                     <p class="">PLAYER 1</p>
-                    <img src="images/PlayingDot.png" alt="" class="dot player1-dot">
+                    <img src="images/PlayingDot.png" alt="Dot p1" class="dot " id="dot-player1">
                 </div>
                 <p id="gscore1" class="gscore">0</p>
             </div>
 
-            <div class="col">
-                <img src="images/Dice6.png" alt="Dice">
+            <div class="col" id="dices">
             </div>
 
             <div class="col player player2">
                 <div>
                     <p class="">PLAYER 2</p>
-                    <img src="images/PlayingDot.png" alt="Dot" class="dot player2-dot">
+                    <img src="images/PlayingDot.png" alt="Dot p2" class="dot" id="dot-player2">
                 </div>
                 <p id="gscore2" class="gscore">0</p>
             </div>
@@ -49,8 +48,8 @@
             </div>
 
             <div class="col">
-                <p>ROLL DICE</p>
-                <p>HOLD</p>
+                <p id="roll">ROLL DICE</p>
+                <p id="hold">HOLD</p>
             </div>
 
             <div class="col ">
@@ -63,7 +62,9 @@
         </div>
     </div>
 
+    
     <!-- Bootsrap JS-->
+    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

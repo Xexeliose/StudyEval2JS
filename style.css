@@ -14,8 +14,8 @@ font-family: 'Lato', sans-serif;
 }
 
 
-.player .dot{
-   /* display: none;*/
+#dot-player2{
+   display: none;
 }
 
 .gscore{
@@ -31,4 +31,8 @@ font-family: 'Lato', sans-serif;
     background-color: red;
     width: 10vw;
     margin: auto;
+}
+
+#dices img{
+    display: none;
 }
