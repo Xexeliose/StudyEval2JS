@@ -4,17 +4,17 @@ let newGame = document.getElementById('newgame')
 let dice = document.getElementById('dice')
 let goal = 100
 
-//Array of dice faces, showing 6 by default
 
+//Array of dice faces, showing 6 by default
 let dices = []
 for (let i = 0; i < 6; i++) {
-    dices[i]= document.createElement("img")
-    dices[i].src = `images/Dice${i+1}.png`
+    dices[i] = document.createElement("img")
+    dices[i].src = `images/Dice${i + 1}.png`
     document.getElementById('dices').appendChild(dices[i])
 }
 dices[5].style.display = 'inline'
 
-
+//Define Player class
 class Player {
     constructor(id, rscoreElement, gscoreElement, dot, player) {
         this.id = id
@@ -28,8 +28,8 @@ class Player {
 }
 
 //Initialize Players
-let player1 = new Player(1, 'rscore1', 'gscore1', 'dot-player1','player1')
-let player2 = new Player(2, 'rscore2', 'gscore2', 'dot-player2','player2')
+let player1 = new Player(1, 'rscore1', 'gscore1', 'dot-player1', 'player1')
+let player2 = new Player(2, 'rscore2', 'gscore2', 'dot-player2', 'player2')
 let currentPlayer = player1
 let nextPlayer = player2
 
@@ -38,14 +38,14 @@ let nextPlayer = player2
 //Roll the dice, hide all img then show the one rolled, stop turn on '1'
 function rolling(Player) {
     //console.log("rolling")
-    
+
     let score = Math.round(Math.random() * 5 + 1)
 
     dices.forEach(element => {
-        element.style.display = "none"  
+        element.style.display = "none"
     });
-    dices[score-1].style.display = "inline"
-    console.log(score-1)
+    dices[score - 1].style.display = "inline"
+    console.log(score - 1)
 
     if (score == 1) {
         Player.rscore = 0
@@ -59,7 +59,7 @@ function rolling(Player) {
 
 roll.addEventListener('click', function () {
     rolling(currentPlayer)
-    
+
 })
 
 //Add Round Score to Global Score,check for win, change players

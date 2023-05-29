@@ -1,6 +1,5 @@
-
 body {
-    font-family: 'Lato' , sans-serif !important;
+    font-family: 'Lato', sans-serif !important;
     font-weight: 200;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,9 +16,6 @@ body {
     margin-left: 2%;
 }
 
-.player p:first-child {
-    display: inline;
-}
 
 
 #dot-player2 {
@@ -65,8 +61,12 @@ svg {
     font-size: 50px;
 }
 
-.player{
+.player {
     margin-top: 8%;
+}
+
+.player p:first-child {
+    display: inline;
 }
 
 #player2 {
@@ -82,7 +82,7 @@ svg {
 }
 
 
-#newgame{
+#newgame {
     font-size: 20px;
     font-weight: 400;
 }
